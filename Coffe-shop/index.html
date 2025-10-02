@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Coffe shop cafe with variety of options and delicious meals and drinks"
+    />
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="imgs/icon.png" />
+    <link rel="apple-touch-icon" href="imgs/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Miniver&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Style sheets -->
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <title>Coffe Shop</title>
+    <script src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js
+"></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <!------------------- HEADER ----------------->
+    <header class="main-header">
+      <div class="logo">
+        <ion-icon name="cafe-outline" class="logo-icon"></ion-icon>
+        <span class="logo-text">Coffe</span>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav-links">
+          <li>
+            <a href="#" class="main-nav-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#menu" class="main-nav-link">Menu</a>
+          </li>
+          <li>
+            <a href="#testimonial" class="main-nav-link">Testimonials</a>
+          </li>
+          <li>
+            <a href="#gallery" class="main-nav-link">Gallery</a>
+          </li>
+          <li>
+            <a href="#about-us" class="main-nav-link">About</a>
+          </li>
+          <li>
+            <a href="#cta" class="main-nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon name="menu-outline" class="icon-mobile-nav"></ion-icon>
+        <ion-icon name="close-outline" class="icon-mobile-nav"></ion-icon>
+      </button>
+    </header>
+    <main>
+      <!------------------- HERO SECTION ----------------->
+      <section class="section-hero" id="hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <p class="hero-title">Best coffe</p>
+            <h1 class="heading-primary">
+              Make your day great with our special coffe!
+            </h1>
+            <p class="hero-description">
+              Welocme to our coffe paradies, where every bean tells a story and
+              every cup sparks joy.
+            </p>
+            <a href="#menu" class="btn btn--full"> Order Now</a>
+            <a href="#cta" class="btn btn--outline"> Contact us</a>
+          </div>
+          <div class="hero-img-box">
+            <img
+              src="imgs/coffee-hero-section.png"
+              alt="Cup of coffe with coffe beans"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!------------------- MENU SECTION ----------------->
+      <section class="section-menu" id="menu">
+        <div class="container center margin-bottom-l">
+          <h2 class="heading-secondary">Our Menu</h2>
+        </div>
+        <div class="container grid grid--3-cols">
+          <div class="item">
+            <img
+              src="imgs/hot-beverages.png"
+              alt="Cup of Hot coffe photo"
+              class="item-image"
+            />
+            <div class="item-text">
+              <p class="item-title">Hot Beverages</p>
+              <p class="item-description">
+                Wide range of streaminh hot coffe to make you fresh and light.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <img
+              src="imgs/cold-beverages.png"
+              alt="Cup of creamy cold coffe"
+              class="item-image"
+            />
+            <div class="item-text">
+              <p class="item-title">Cold Beverages</p>
+              <p class="item-description">
+                Creamy and frathy cold coffe to make you cool.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <img
+              src="imgs/refreshment.png"
+              alt="Cup of creamy cold coffe"
+              class="item-image"
+            />
+            <div class="item-text">
+              <p class="item-title">Refreshment</p>
+              <p class="item-description">
+                Fruit and icy refershing drink to make feel refresh.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <img
+              src="imgs/special-combo.png"
+              alt="cola drink,fries, 2 burgers and hot-dog sandwich  "
+              class="item-image"
+            />
+            <div class="item-text">
+              <p class="item-title">Special Combo</p>
+              <p class="item-description">
+                Your favorite eating and drinking combinations.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <img
+              src="imgs/desserts.png"
+              alt="Cup of strawabery and creamy desert"
+              class="item-image"
+            />
+            <div class="item-text">
+              <p class="item-title">Desert</p>
+              <p class="item-description">
+                Saitate tour palate and take you on a culinary treat.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <img
+              src="imgs/burger-frenchfries.png"
+              alt="Burger sandwich and French fries"
+              class="item-image"
+            />
+            <div class="item-text">
+              <p class="item-title">Burger &amp; French Fries</p>
+              <p class="item-description">
+                Quick bites to satisy your small size hunger.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!------------------- TESTIMONIAL SECTION ----------------->
+      <section class="section-testimonials" id="testimonial">
+        <div class="container margin-bottom-l center">
+          <h2 class="heading-secondary">Testimonials</h2>
+        </div>
+        <div class="container">
+          <div class="testimonial-container">
+            <ion-icon
+              name="chevron-back-outline"
+              class="icon icon--left"
+            ></ion-icon>
+            <ion-icon
+              name="chevron-forward-outline"
+              class="icon icon--right"
+            ></ion-icon>
+            <div class="testimonial-wrapper">
+              <div class="testimonial testimonial--1">
+                <div class="testimonial-img">
+                  <img src="imgs/customer-1.jpg" alt="James Wilson" />
+                </div>
+                <div class="testimonial-text">
+                  <p class="testimonial-name">Micheal Brown</p>
+                  <blockquote class="testimonial-description">
+                    Fantastic macha flavor,Fresh and aromatic, Quich shipping.
+                  </blockquote>
+                </div>
+              </div>
+              <div class="testimonial testimonial--2">
+                <div class="testimonial-img">
+                  <img src="imgs/customer-2.jpg" alt="James Wilson" />
+                </div>
+
+                <div class="testimonial-text">
+                  <p class="testimonial-name">Emily Harris</p>
+                  <blockquote class="testimonial-description">
+                    Excellent quality! Fresh beans and quicj delivery. Highly
+                    recommend
+                  </blockquote>
+                </div>
+              </div>
+              <div class="testimonial testimonial--3">
+                <div class="testimonial-img">
+                  <img src="imgs/customer-3.jpg" alt="James Wilson" />
+                </div>
+
+                <div class="testimonial-text">
+                  <p class="testimonial-name">Sarah Johnson</p>
+                  <blockquote class="testimonial-description">
+                    Loved the french roast. perfectly balanced and rich.Will
+                    order again!
+                  </blockquote>
+                </div>
+              </div>
+              <div class="testimonial testimonial--4">
+                <div class="testimonial-img">
+                  <img src="imgs/customer-4.jpg" alt="James Wilson" />
+                </div>
+
+                <div class="testimonial-text">
+                  <p class="testimonial-name">James Wilson</p>
+                  <blockquote class="testimonial-description">
+                    Great espresso blend! Smooth and bold flavor. Fast shipping
+                    too!
+                  </blockquote>
+                </div>
+              </div>
+              <div class="testimonial testimonial--5 testimonial--hidden">
+                <div class="testimonial-img">
+                  <img src="imgs/customer-5.jpg" alt="James Wilson" />
+                </div>
+
+                <div class="testimonial-text">
+                  <p class="testimonial-name">Judy Wilson</p>
+                  <blockquote class="testimonial-description">
+                    Loved the frech roast. perfectly balanced and rich. will
+                    order again!
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+            <div class="dots">
+              <div class="dot dot--1"></div>
+              <div class="dot dot--2 click"></div>
+              <div class="dot dot--3"></div>
+              <div class="dot dot--4"></div>
+              <div class="dot dot--5"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!------------------- GALLERY SECTION ----------------->
+      <section class="section-gallery" id="gallery">
+        <div class="container center margin-bottom-l">
+          <h2 class="heading-secondary">Gallery</h2>
+        </div>
+        <div class="container gallery">
+          <figure class="gallery-img">
+            <img src="imgs/gallery-1.jpg" alt="Cup of coffe" />
+          </figure>
+          <figure class="gallery-img">
+            <img
+              src="imgs/gallery-2.jpg"
+              alt="Omlet with hot-dog and vegetabels "
+            />
+          </figure>
+          <figure class="gallery-img">
+            <img
+              src="imgs/gallery-3.jpg"
+              alt="three cups of strawabery,beach and choclate smoothe"
+            />
+          </figure>
+          <figure class="gallery-img">
+            <img src="imgs/gallery-4.jpg" alt="Omlet dish with cup of tea" />
+          </figure>
+          <figure class="gallery-img">
+            <img
+              src="imgs/gallery-5.jpg"
+              alt="dish of sandwich tortiea potatoes and sauces "
+            />
+          </figure>
+          <figure class="gallery-img">
+            <img
+              src="imgs/gallery-6.jpg"
+              alt="Cup of coffe and croassion with honey"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <!------------------- ABOUT-US SECTION ----------------->
+      <section class="section-about" id="about-us">
+        <div class="container about-us">
+          <figure class="about-img-box">
+            <img
+              src="imgs/about-image.jpg"
+              alt="two people take cup of coffe and talking"
+            />
+          </figure>
+          <div class="about-text-box">
+            <h2 class="heading-secondary">About Us</h2>
+            <p class="about-text">
+              At coffe House in Berndorf, Germany, we pride ourselves on being a
+              go-to destination for coffe lovers and conversation seekers alike.
+              we're dedicated to providing a exceptional coffe experience in a
+              cozy and initing atmosphers, where gustes can relax, unwind, and
+              enjoy thier time in comfort.
+            </p>
+            <ul class="social-links">
+              <li>
+                <a href="#" class="social-link"
+                  ><ion-icon name="logo-facebook" class="social-icon"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="social-link"
+                  ><ion-icon
+                    name="logo-instagram"
+                    class="social-icon"
+                  ></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="social-link"
+                  ><ion-icon name="logo-twitter" class="social-icon"></ion-icon
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!------------------- Contact SECTIO ----------------->
+      <section class="section-cta" id="cta">
+        <div class="container center margin-bottom-l">
+          <h2 class="heading-secondary">Contact Us</h2>
+        </div>
+        <div class="container grid grid--2-cols">
+          <ul class="contact-info">
+            <li class="contact">
+              <ion-icon name="location-outline" class="contact-icon"></ion-icon>
+              <a class="contact-link" href="#">
+                123 Campsite Avenue, Wilderness, CA 98765
+              </a>
+            </li>
+            <li class="contact">
+              <ion-icon name="mail-outline" class="contact-icon"></ion-icon>
+              <a href="mailto:info@coffeshopwebsite.com" class="contact-link"
+                >info@coffeshopwebsite.com</a
+              >
+            </li>
+            <li class="contact">
+              <ion-icon name="call-outline" class="contact-icon"></ion-icon>
+              <a href="tel:(123) 456-78909" class="contact-link"
+                >(123) 456-78909</a
+              >
+            </li>
+            <li class="contact">
+              <ion-icon name="time-outline" class="contact-icon"></ion-icon>
+              <p class="contact-text">Monday - Friday: 9:00 AM - 5:00 PM</p>
+            </li>
+            <li class="contact">
+              <ion-icon name="time-outline" class="contact-icon"></ion-icon>
+              <p class="contact-text">Saturday: 10:00 AM - 3:00 PM</p>
+            </li>
+            <li class="contact">
+              <ion-icon name="time-outline" class="contact-icon"></ion-icon>
+              <p class="contact-text">Sunday: Closed</p>
+            </li>
+            <li class="contact">
+              <ion-icon name="globe-outline" class="contact-icon"></ion-icon>
+              <a href="#" class="contact-link">www.codingweb.com</a>
+            </li>
+          </ul>
+          <form class="cta-form" name="contact" netlify>
+            <input
+              type="text"
+              name="Name"
+              placeholder="Your name"
+              required
+              name="full-name"
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your email"
+              required
+              name="email"
+            />
+            <textarea name="message" placeholder="Your message"></textarea>
+            <input type="submit" value="submit" class="btn--cta" />
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!------------------- FOOTER ----------------->
+    <footer class="footer">
+      <div class="container footer-items">
+        <p class="copyright">
+          copyright &copy; <span class="year">2027</span> by coffe shop, Inc.
+          All rights reserved.
+        </p>
+
+        <ul class="footer-links">
+          <li class="footer-link">
+            <ion-icon name="logo-facebook" class="footer-icon"></ion-icon>
+          </li>
+          <li class="footer-link">
+            <ion-icon name="logo-instagram" class="footer-icon"></ion-icon>
+          </li>
+          <li class="footer-link">
+            <ion-icon name="logo-twitter" class="footer-icon"></ion-icon>
+          </li>
+        </ul>
+        <ul class="list-policy">
+          <li class="policy">Privacy policy</li>
+          <li class="policy">Refund policy</li>
+        </ul>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

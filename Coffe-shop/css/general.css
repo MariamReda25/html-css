@@ -1,0 +1,138 @@
+/* 
+
+--- 01 TYPOGRAPHY SYSTEM :
+  - FONT SIZE SYSTEM (px)
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+  
+  - Font weights :
+     Default: 400
+     Medium:500
+     Semi-bold:600
+     Bold: 700
+  - line-heights :
+    Default : 1
+ 
+   - letter spacing:
+ 
+
+--- 02 COLOR :
+    - Main Color :  #7e2a0c
+      Tints:  #f2eae7 - #ff8903
+      Shades: #3f1506
+    - Gray Color: #555 - #333 -  #888 -#ddd
+    - Accent Color: 
+
+--- 05 SHADOWS :
+ 
+--- 06 BORDER RADIUS :
+     -Default: 25px
+ 
+--- 07 WHITE SPACE :
+  - SPACING SYSTEM (px)
+     2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+
+
+*/
+
+/* GENERAL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* 1rem = 10px */
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  background-color: #f2eae7;
+
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.grid {
+  display: grid;
+  column-gap: 4.8rem;
+  row-gap: 8rem;
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--v-center {
+  align-items: center;
+}
+.center {
+  text-align: center;
+}
+.heading-primary {
+  font-size: 5.2rem;
+  color: #f2eae7;
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+}
+.heading-secondary {
+  font-size: 4.4rem;
+  color: #333;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+  border-bottom: 9px solid #ff8903;
+  border-width: 10px;
+  display: inline-block;
+}
+
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+  font-size: 2rem;
+  border-radius: 25px;
+  margin-right: 1.2rem;
+
+  transition: all 0.3s;
+}
+.btn--full:link,
+.btn--full:visited {
+  background-color: #ff8903;
+  color: #7e2a0c;
+}
+.btn--full:hover,
+.btn--full:active {
+  background-color: #7e2a0c;
+  color: #f2eae7;
+  box-shadow: inset 0 0 0 1px #f2eae7;
+}
+.btn--outline:link,
+.btn--outline:visited {
+  color: #f2eae7;
+  border: 1px solid #f2eae7;
+}
+.btn--outline:hover,
+.btn--outline:active {
+  color: #7e2a0c;
+  background-color: #ff8903;
+  border: 1px solid transparent;
+}
+
+.margin-bottom-l {
+  margin-bottom: 9.6rem;
+}
